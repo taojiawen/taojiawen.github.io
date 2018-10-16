@@ -1,8 +1,11 @@
 # 新建并上传当前博客
 
+
+
+## git clone 仓库地址
 ![clipboard.png](https://upload-images.jianshu.io/upload_images/14465950-a4d77d0cb47cb12f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-## git clone 文件来源
+## git clone 地址来源
 
 ![clipboard7.png](https://upload-images.jianshu.io/upload_images/14465950-d22ef29ced0ba579.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -27,12 +30,12 @@
 
 ![clipboard4.png](https://upload-images.jianshu.io/upload_images/14465950-f3a4e6b0ebac7704.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-## 提交文件到本地
+## 提交文件（提交日志）到本地git仓库
 
 ![clipboard5.png](https://upload-images.jianshu.io/upload_images/14465950-444ce6fa0b5cfea4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## 输入邮箱 用户名
 
-## 提交文件到服务器 以后不需要 -u及后面
+## 提交文件到服务器 以后不需要 -u及后面（第一次设置以后默认往master分支提交代码）
 
 ![clipboard6.png](https://upload-images.jianshu.io/upload_images/14465950-4143430cc14ad967.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
