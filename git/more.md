@@ -43,11 +43,7 @@
 2.git pull 将我们远端仓库的代码拉取下来
 3.git stash pop将我们的本地代码进行出栈(远端代码和本地代码有冲突的部分会出现
 
-<<<<<<
-xxxxxxxx
-========
-xxxxxxxx
->>>>>>>
+![123.png](https://upload-images.jianshu.io/upload_images/14465950-93fc3c63b123c75e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 这种样子,我们只需要将<,=,>都删掉，然后将冲突代码都改成我们最终想要的样子保存重新提交就好了)
 
