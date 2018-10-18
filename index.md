@@ -1,4 +1,4 @@
-﻿# 佳文欢迎您
+# 佳文欢迎您
 ## 相应博客链接如下
 - git
 	- [github blog build](http://taojiawen.github.io/git/build)
@@ -6,4 +6,7 @@
 	- [git 常见错误](http://taojiawen.github.io/git/wrong)
 	- [git 回顾](http://taojiawen.github.io/git/more)
 - linux
+	- [Linux基础](http://taojiawen.github.io/linux/linux)
+	- [Linux vi编译器](http://taojiawen.github.io/linux/vi)
+	- [Linux 用户和权限管理](http://taojiawen.github.io/linux/user)
 - hadoop
