@@ -1,11 +1,11 @@
 # Linux 常用指令
 
 ### 1.重启命令
-- reboot	
-- shutdown -r now 立刻重启(root用户使用)
-- shutdown -r 10 过十分钟自动重启(root用户使用)
-- shutdown -r 20:12 在时间为20:12重启(root用户使用)
-- 如果是通过shutdown命令设置重启的话,可以用shutdown -c命令取消重启
+	- reboot	
+	- shutdown -r now 立刻重启(root用户使用)
+	- shutdown -r 10 过十分钟自动重启(root用户使用)
+	- shutdown -r 20:12 在时间为20:12重启(root用户使用)
+	- 如果是通过shutdown命令设置重启的话,可以用shutdown -c命令取消重启
 	
 ### 2.关机命令
 - halt 立即关机
