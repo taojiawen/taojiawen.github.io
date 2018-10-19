@@ -7,6 +7,7 @@
 	- [git 回顾](http://taojiawen.github.io/git/more)
 - linux
 	- [Linux基础](http://taojiawen.github.io/linux/linux)
-	- [Linux vi编译器](http://taojiawen.github.io/linux/vi)
-	- [Linux 用户和权限管理](http://taojiawen.github.io/linux/user)
+	- [vi编译器](http://taojiawen.github.io/linux/vi)
+	- [用户 组管理](http://taojiawen.github.io/linux/user)
+	- [文件权限管理](http://taojiawen.github.io/linux/chown)
 - hadoop
