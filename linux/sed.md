@@ -1,48 +1,48 @@
-#sedÃüÁî
+# sedå‘½ä»¤
 
-###¸ñÊ½:sed Ñ¡Ïî ¶¯×÷ filename
+### æ ¼å¼:sed é€‰é¡¹ åŠ¨ä½œ filename
 
-###Ñ¡Ïî
+### é€‰é¡¹
 
-	 -n (Ê¹ÓÃ°²¾²(silent)Ä£Ê½¡£±»´¦ÀíµÄĞĞ²Å»áÔÚÃüÁîĞĞ´òÓ¡)
+	 -n (ä½¿ç”¨å®‰é™(silent)æ¨¡å¼ã€‚è¢«å¤„ç†çš„è¡Œæ‰ä¼šåœ¨å‘½ä»¤è¡Œæ‰“å°)
 
-###¶¯×÷
+### åŠ¨ä½œ
 
-- a ÍùÏÂÒ»ĞĞĞÂÔö
-![TIM½ØÍ¼20181022191629.png](https://upload-images.jianshu.io/upload_images/14465950-8d3310f411f2a7fb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-- i	ÍùÉÏÒ»ĞĞĞÂÔö
-	ÓÃ·¨ÓëaÀàËÆ
-- c Ìæ»»(1,5c»á½«ÕâÒ»¿éÇøÓòÕû¸öÌæ»»£¬²»»áÃ¿ĞĞ¶¼Ìæ»») 
+- a å¾€ä¸‹ä¸€è¡Œæ–°å¢
+![TIMæˆªå›¾20181022191629.png](https://upload-images.jianshu.io/upload_images/14465950-8d3310f411f2a7fb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+- i	å¾€ä¸Šä¸€è¡Œæ–°å¢
+	ç”¨æ³•ä¸aç±»ä¼¼
+- c æ›¿æ¢(1,5cä¼šå°†è¿™ä¸€å—åŒºåŸŸæ•´ä¸ªæ›¿æ¢ï¼Œä¸ä¼šæ¯è¡Œéƒ½æ›¿æ¢) 
 
-![TIM½ØÍ¼20181022192711.png](https://upload-images.jianshu.io/upload_images/14465950-64c6ea4e8813ff98.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIMæˆªå›¾20181022192711.png](https://upload-images.jianshu.io/upload_images/14465950-64c6ea4e8813ff98.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-- d É¾³ı
+- d åˆ é™¤
 
-![TIM½ØÍ¼20181022110522.png](https://upload-images.jianshu.io/upload_images/14465950-18293410c4bd731a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIMæˆªå›¾20181022110522.png](https://upload-images.jianshu.io/upload_images/14465950-18293410c4bd731a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-- p Êä³ö (¶àºÍ -n Ò»ÆğÊ¹ÓÃ)
-- w Ğ´Èë sed 'w Òª±»Ğ´ÈëµÄÎÄ¼ş(Ä¿±êÎÄ¼ş)' ¶ÁÈ¡ÄÚÈİµÄÎÄ¼ş(Ô´ÎÄ¼ş)Ö»ÒªÊÇwÏòÎÄ¼ş
-	ÖĞ½øĞĞĞ´Èë¾Í»á½«Ä¿±êÎÄ¼şÖ®Ç°µÄÄÚÈİÈ«²¿¸Éµô
-- r ¶ÁÈ¡ sed '2r Òª¶ÁÈ¡µÄÎÄ¼ş' ¼ÓÈëÊı¾İµÄÎÄ¼ş(Ä¿±êÎÄ¼ş)
+- p è¾“å‡º (å¤šå’Œ -n ä¸€èµ·ä½¿ç”¨)
+- w å†™å…¥ sed 'w è¦è¢«å†™å…¥çš„æ–‡ä»¶(ç›®æ ‡æ–‡ä»¶)' è¯»å–å†…å®¹çš„æ–‡ä»¶(æºæ–‡ä»¶)åªè¦æ˜¯wå‘æ–‡ä»¶
+	ä¸­è¿›è¡Œå†™å…¥å°±ä¼šå°†ç›®æ ‡æ–‡ä»¶ä¹‹å‰çš„å†…å®¹å…¨éƒ¨å¹²æ‰
+- r è¯»å– sed '2r è¦è¯»å–çš„æ–‡ä»¶' åŠ å…¥æ•°æ®çš„æ–‡ä»¶(ç›®æ ‡æ–‡ä»¶)
 
-- s Ìæ»»¾­³£ÅäºÏÕıÔò½øĞĞ²Ù×÷
+- s æ›¿æ¢ç»å¸¸é…åˆæ­£åˆ™è¿›è¡Œæ“ä½œ
 
-![TIM½ØÍ¼20181022111819.png](https://upload-images.jianshu.io/upload_images/14465950-602a09a2072d7c33.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIMæˆªå›¾20181022111819.png](https://upload-images.jianshu.io/upload_images/14465950-602a09a2072d7c33.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-- ¸ß¼¶²Ù×÷
-	 | ¹ÜµÀ·û,Ê¹ÓÃ¸Ã·ûºÅÅäºÏÆäËûÃüÁî
-	 {} ¿ÉÒÔÈÃsedÖ´ĞĞ¶à¸ö¶¯×÷,Ö»ÊÇ¶¯×÷Ö®¼äÒªÓÃ";"·ÖºÅ¸ô¿ª
-	 &Ìæ»» 
- 	 &Ïàµ±ÓÚÕ¼Î»·ûµÄ×÷ÓÃ ¾ÍÊÇÎÒÃÇ s/²éÑ¯Ìõ¼ş/²éÑ¯µ½µÄÄÚÈİ
-	 ¿ÉÒÔÔÚs/²éÑ¯Ìõ¼ş/ÒªÌæ»»³ÉµÄÄÚÈİÖĞ½øĞĞÊ¹ÓÃ,ÊµÏÖ×·¼ÓµÄĞ§¹û
-	 \u×ª³É´óĞ´¿ÉÒÔÅäºÏÎÒÃÇµÄ&À´ÊµÏÖ½«Æ¥ÅäÄÚÈİ×ª»»³É´óĞ´µÄ²Ù×÷
+- é«˜çº§æ“ä½œ
+	 | ç®¡é“ç¬¦,ä½¿ç”¨è¯¥ç¬¦å·é…åˆå…¶ä»–å‘½ä»¤
+	 {} å¯ä»¥è®©sedæ‰§è¡Œå¤šä¸ªåŠ¨ä½œ,åªæ˜¯åŠ¨ä½œä¹‹é—´è¦ç”¨";"åˆ†å·éš”å¼€
+	 &æ›¿æ¢ 
+ 	 &ç›¸å½“äºå ä½ç¬¦çš„ä½œç”¨ å°±æ˜¯æˆ‘ä»¬ s/æŸ¥è¯¢æ¡ä»¶/æŸ¥è¯¢åˆ°çš„å†…å®¹
+	 å¯ä»¥åœ¨s/æŸ¥è¯¢æ¡ä»¶/è¦æ›¿æ¢æˆçš„å†…å®¹ä¸­è¿›è¡Œä½¿ç”¨,å®ç°è¿½åŠ çš„æ•ˆæœ
+	 \uè½¬æˆå¤§å†™å¯ä»¥é…åˆæˆ‘ä»¬çš„&æ¥å®ç°å°†åŒ¹é…å†…å®¹è½¬æ¢æˆå¤§å†™çš„æ“ä½œ
 	 
-![TIM½ØÍ¼20181022114542.png](https://upload-images.jianshu.io/upload_images/14465950-fac7da2c2f3adebd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIMæˆªå›¾20181022114542.png](https://upload-images.jianshu.io/upload_images/14465950-fac7da2c2f3adebd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 	 
-	 ()·Ö×é¹¦ÄÜ
-	 »ñÈ¡·Ö×éµÄÄÚÈİ
-	 Ê×ÏÈ·Ö×éµÄĞòºÅÊÇ´Ó1¿ªÊ¼µÄ²¢ÇÒ°´ÕÕ´Ó×óµ½ÓÒµÄË³ĞòÅÅµÄ
-	 Òª»ñÈ¡Ê¹ÓÃ\·Ö×éµÄĞòºÅÀ´»ñÈ¡,ÀıÈç\1¾ÍÊÇÕ¼Î»·û
+	 ()åˆ†ç»„åŠŸèƒ½
+	 è·å–åˆ†ç»„çš„å†…å®¹
+	 é¦–å…ˆåˆ†ç»„çš„åºå·æ˜¯ä»1å¼€å§‹çš„å¹¶ä¸”æŒ‰ç…§ä»å·¦åˆ°å³çš„é¡ºåºæ’çš„
+	 è¦è·å–ä½¿ç”¨\åˆ†ç»„çš„åºå·æ¥è·å–,ä¾‹å¦‚\1å°±æ˜¯å ä½ç¬¦
 	 
-![TIM½ØÍ¼20181022141939.png](https://upload-images.jianshu.io/upload_images/14465950-0307d235885b9e42.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIMæˆªå›¾20181022141939.png](https://upload-images.jianshu.io/upload_images/14465950-0307d235885b9e42.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
