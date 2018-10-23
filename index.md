@@ -12,4 +12,5 @@
 	- [文件权限管理](http://taojiawen.github.io/linux/chown)
 	- [sed命令](http://taojiawen.github.io/linux/sed)
 	- [awk命令](http://taojiawen.github.io/linux/awk)
+	- [shell](http://taojiawen.github.io/linux/shell)
 - hadoop
