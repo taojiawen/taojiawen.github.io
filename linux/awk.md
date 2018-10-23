@@ -1,37 +1,37 @@
-# awk ĞĞ¶ÁÈ¡ÃüÁî
-### ¸ñÊ½ awk Ñ¡Ïî command file
+# awk è¡Œè¯»å–å‘½ä»¤
+### æ ¼å¼ awk é€‰é¡¹ command file
 	 
-	 -F ÉèÖÃ·Ö¸ô·û Ä¬ÈÏ¸ù¾İ" "¿Õ¸ñÀ´·Ö¸î
-	 NR ĞĞºÅ
-	 NF (¸ù¾İ·Ö¸ô·û)ÁĞÊı
+	 -F è®¾ç½®åˆ†éš”ç¬¦ é»˜è®¤æ ¹æ®" "ç©ºæ ¼æ¥åˆ†å‰²
+	 NR è¡Œå·
+	 NF (æ ¹æ®åˆ†éš”ç¬¦)åˆ—æ•°
 	 print
 	 printf
 	 
-![TIM½ØÍ¼20181022160030.png](https://upload-images.jianshu.io/upload_images/14465950-d47a1c7588b3df01.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIMæˆªå›¾20181022160030.png](https://upload-images.jianshu.io/upload_images/14465950-d47a1c7588b3df01.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 	 
-![TIM½ØÍ¼20181022160836.png](https://upload-images.jianshu.io/upload_images/14465950-8eda3b7ecccd987a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIMæˆªå›¾20181022160836.png](https://upload-images.jianshu.io/upload_images/14465950-8eda3b7ecccd987a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 	 
-![TIM½ØÍ¼20181022161448.png](https://upload-images.jianshu.io/upload_images/14465950-6bd974988e61b931.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIMæˆªå›¾20181022161448.png](https://upload-images.jianshu.io/upload_images/14465950-6bd974988e61b931.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 	 
 	 
 	 
-	 ÒªÊ¹ÓÃÕıÔò: ~/ÕıÔò±í´ïÊ½/
+	 è¦ä½¿ç”¨æ­£åˆ™: ~/æ­£åˆ™è¡¨è¾¾å¼/
 	 
-![TIM½ØÍ¼20181022162523.png](https://upload-images.jianshu.io/upload_images/14465950-959e379ba214288b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIMæˆªå›¾20181022162523.png](https://upload-images.jianshu.io/upload_images/14465950-959e379ba214288b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 	 
-	 Èç¹ûÓÃ!~¾ÍÊÇ¶ÔÕıÔòÆ¥ÅäµÄÄÚÈİÈ¡·Ç
+	 å¦‚æœç”¨!~å°±æ˜¯å¯¹æ­£åˆ™åŒ¹é…çš„å†…å®¹å–é
 	 
-![TIM½ØÍ¼20181022162704.png](https://upload-images.jianshu.io/upload_images/14465950-0cf11a22fa950fd2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIMæˆªå›¾20181022162704.png](https://upload-images.jianshu.io/upload_images/14465950-0cf11a22fa950fd2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 	 
-	 awkÀ©Õ¹¸ñÊ½
-	 awk Ñ¡Ïî 'BEGIN{} command END{}' file
+	 awkæ‰©å±•æ ¼å¼
+	 awk é€‰é¡¹ 'BEGIN{} command END{}' file
 	 
-![TIM½ØÍ¼20181022163906.png](https://upload-images.jianshu.io/upload_images/14465950-af5eaad30e198d97.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIMæˆªå›¾20181022163906.png](https://upload-images.jianshu.io/upload_images/14465950-af5eaad30e198d97.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-![TIM½ØÍ¼20181022165050.png](https://upload-images.jianshu.io/upload_images/14465950-1f68e7f0c3cf3655.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIMæˆªå›¾20181022165050.png](https://upload-images.jianshu.io/upload_images/14465950-1f68e7f0c3cf3655.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-![TIM½ØÍ¼20181022171821.png](https://upload-images.jianshu.io/upload_images/14465950-bd0b795bcf7d815d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIMæˆªå›¾20181022171821.png](https://upload-images.jianshu.io/upload_images/14465950-bd0b795bcf7d815d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-![TIM½ØÍ¼20181022171121.png](https://upload-images.jianshu.io/upload_images/14465950-022c34c6eb66a68e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIMæˆªå›¾20181022171121.png](https://upload-images.jianshu.io/upload_images/14465950-022c34c6eb66a68e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-![TIM½ØÍ¼20181022165250.png](https://upload-images.jianshu.io/upload_images/14465950-35bbf776268a47fa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIMæˆªå›¾20181022165250.png](https://upload-images.jianshu.io/upload_images/14465950-35bbf776268a47fa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
