@@ -31,10 +31,15 @@
 
 - 高级操作
 	 | 管道符,使用该符号配合其他命令
+	 
 	 {} 可以让sed执行多个动作,只是动作之间要用";"分号隔开
+	 
 	 &替换 
+	 
  	 &相当于占位符的作用 就是我们 s/查询条件/查询到的内容
+	 
 	 可以在s/查询条件/要替换成的内容中进行使用,实现追加的效果
+	 
 	 \u转成大写可以配合我们的&来实现将匹配内容转换成大写的操作
 	 
 ![TIM截图20181022114542.png](https://upload-images.jianshu.io/upload_images/14465950-fac7da2c2f3adebd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
