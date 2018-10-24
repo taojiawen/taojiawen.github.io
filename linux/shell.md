@@ -229,6 +229,7 @@
 
 ![TIM截图20181023211259.png](https://upload-images.jianshu.io/upload_images/14465950-eaa27522a52ff11c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
+[shell 括号](https://blog.csdn.net/liweigao01/article/details/78669674)
 	
 
 
