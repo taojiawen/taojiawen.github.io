@@ -14,3 +14,4 @@
 	- [awk命令](http://taojiawen.github.io/linux/awk)
 	- [shell](http://taojiawen.github.io/linux/shell)
 - hadoop
+	- [环境搭建](http://taojiawen.github.io/hadoop/config)
