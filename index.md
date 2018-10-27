@@ -15,4 +15,5 @@
 	- [shell](http://taojiawen.github.io/linux/shell)
 	- [sudo](http://taojiawen.github.io/linux/case)
 - hadoop
-	- [环境搭建](http://taojiawen.github.io/hadoop/config)
+	- [伪分布式环境搭建](http://taojiawen.github.io/hadoop/config)
+	- [完全分布式](http://taojiawen.github.io/hadoop/hadoop)
