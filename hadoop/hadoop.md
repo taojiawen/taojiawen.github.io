@@ -1,47 +1,47 @@
-# ÍêÕûhadoop·Ö²¼Ê½
+# å®Œæ•´hadoopåˆ†å¸ƒå¼
 
-### ×¼±¸¹¤×÷
+### å‡†å¤‡å·¥ä½œ
 
-ĞéÄâ»ú hadoop ÓÃ»§ visudo
+è™šæ‹Ÿæœº hadoop ç”¨æˆ· visudo
 
 yum install -y (vim net-tools)
 
-/home/hadoop ÏÂÓĞ hadoop.gz jdk.gz
+/home/hadoop ä¸‹æœ‰ hadoop.gz jdk.gz
 
 systemctl stop firewalld
 
-×÷Îªnamenode
+ä½œä¸ºnamenode
 
-¿ËÂ¡Èı¸ö×÷Îªdatanode
+å…‹éš†ä¸‰ä¸ªä½œä¸ºdatanode
 
-### ¿ªÊ¼ÅäÖÃ
+### å¼€å§‹é…ç½®
 
-ÅäÖÃnamenodeÎªÎ±·Ö²¼Ê½²ÎÕÕÉÏÒ»Æª
-[»·¾³´î½¨](http://taojiawen.github.io/hadoop/config)
+é…ç½®namenodeä¸ºä¼ªåˆ†å¸ƒå¼å‚ç…§ä¸Šä¸€ç¯‡
+[ç¯å¢ƒæ­å»º](http://taojiawen.github.io/hadoop/config)
 
 vim ~/hadoop-2.7.3/etc/hadoop/slaves
-¼ÓÈëdatanode ipµØÖ·
+åŠ å…¥datanode ipåœ°å€
 
-datanodeÍ¬ÑùÅäÖÃÎªµ¥½Úµãhadoop
-Ö»Òª datanode Â·¾¶Óë namenode Ò»ÖÂ ¿ÉÒÔ
-scp -r Ïë´«µÄÎÄ¼ş ÓÃ»§Ãû@ipµØÖ·:Ä¿±êµØÖ·
-°ÑnamenodeµÄÅäÖÃ´«¸øDataNode
+datanodeåŒæ ·é…ç½®ä¸ºå•èŠ‚ç‚¹hadoop
+åªè¦ datanode è·¯å¾„ä¸ namenode ä¸€è‡´ å¯ä»¥
+scp -r æƒ³ä¼ çš„æ–‡ä»¶ ç”¨æˆ·å@ipåœ°å€:ç›®æ ‡åœ°å€
+æŠŠnamenodeçš„é…ç½®ä¼ ç»™DataNode
 
-sudo vim /etc/hosts °Ñip namenode ip datanode(datanode±ğÃûĞèÒª²»Í¬) Ğ´Èë
+sudo vim /etc/hosts æŠŠip namenode ip datanode(datanodeåˆ«åéœ€è¦ä¸åŒ) å†™å…¥
 
-´ËÊ±¾Í¿ÉÒÔÔÚnamenode¿ªÆôdatanodeµÄdfsºÍyarn µ«ÊÇĞèÒª·´¸´ÊäÈëÃÜÂë
+æ­¤æ—¶å°±å¯ä»¥åœ¨namenodeå¼€å¯datanodeçš„dfså’Œyarn ä½†æ˜¯éœ€è¦åå¤è¾“å…¥å¯†ç 
 
 so
-ssh-keygenÉú³ÉÃÜÔ¿(¹ı³Ì»Ø³µ¼´¿É)
-ssh-copy-id ÓÃ»§Ãû@IPµØÖ· °Ñ¹«Ô¿·¢¸ødatanode
-ssh-copy-id localhost ÉèÖÃ±¾µØÃâÃÜ
-µ½ÕâÀïÒÑ¾­Éú³É²¢×·¼ÓÍê³É
+ssh-keygenç”Ÿæˆå¯†é’¥(è¿‡ç¨‹å›è½¦å³å¯)
+ssh-copy-id ç”¨æˆ·å@IPåœ°å€ æŠŠå…¬é’¥å‘ç»™datanode
+ssh-copy-id localhost è®¾ç½®æœ¬åœ°å…å¯†
+åˆ°è¿™é‡Œå·²ç»ç”Ÿæˆå¹¶è¿½åŠ å®Œæˆ
 
 ps
-authorized_keys:´æ·ÅÔ¶³ÌÃâÃÜµÇÂ¼µÄ¹«Ô¿,Ö÷ÒªÍ¨¹ıÕâ¸öÎÄ¼ş¼ÇÂ¼¶àÌ¨»úÆ÷µÄ¹«Ô¿
-id_rsa : Éú³ÉµÄË½Ô¿ÎÄ¼ş
-id_rsa.pub £º Éú³ÉµÄ¹«Ô¿ÎÄ¼ş
-know_hosts : ÒÑÖªµÄÖ÷»ú¹«Ô¿Çåµ¥
+authorized_keys:å­˜æ”¾è¿œç¨‹å…å¯†ç™»å½•çš„å…¬é’¥,ä¸»è¦é€šè¿‡è¿™ä¸ªæ–‡ä»¶è®°å½•å¤šå°æœºå™¨çš„å…¬é’¥
+id_rsa : ç”Ÿæˆçš„ç§é’¥æ–‡ä»¶
+id_rsa.pub ï¼š ç”Ÿæˆçš„å…¬é’¥æ–‡ä»¶
+know_hosts : å·²çŸ¥çš„ä¸»æœºå…¬é’¥æ¸…å•
 
 ![1.jpg](https://upload-images.jianshu.io/upload_images/14465950-db7a7be76e591951.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
