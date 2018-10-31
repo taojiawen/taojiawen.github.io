@@ -8,17 +8,25 @@
 
 	重要特性如下：
 	
-	（1）HDFS中的文件在物理上是分块存储（block），块的大小可以通过配置参数( dfs.blocksize)来规定，默认大小在hadoop2.x版本中是128M，老版本中是64M
+	（1）HDFS中的文件在物理上是分块存储（block），块的大小可以通过配置参数( dfs.blocksize)来规定，
+	
+	默认大小在hadoop2.x版本中是128M，老版本中是64M
 
-	（2）HDFS文件系统会给客户端提供一个统一的抽象目录树，客户端通过路径来访问文件，形如：hdfs://namenode:port/dir-a/dir-b/dir-c/file.data
+	（2）HDFS文件系统会给客户端提供一个统一的抽象目录树，客户端通过路径来访问文件，形如：
+	
+	hdfs://namenode:port/dir-a/dir-b/dir-c/file.data
 
 	（3）目录结构及文件分块信息(元数据)的管理由namenode节点承担
 	
-	——namenode是HDFS集群主节点，负责维护整个hdfs文件系统的目录树，以及每一个路径（文件）所对应的block块信息（block的id，及所在的datanode服务器）
+	——namenode是HDFS集群主节点，负责维护整个hdfs文件系统的目录树，以及每一个路径（文件）所对应的
+	
+	block块信息（block的id，及所在的datanode服务器）
 
 	（4）文件的各个block的存储管理由datanode节点承担
 	
-	---- datanode是HDFS集群从节点，每一个block都可以在多个datanode上存储多个副本（副本数量也可以通过参数设置dfs.replication）
+	---- datanode是HDFS集群从节点，每一个block都可以在多个datanode上存储多个副本（副本数量也可以
+	
+	通过参数设置dfs.replication）
 
 	（5）HDFS是设计成适应一次写入，多次读出的场景，且不支持文件的修改
 
