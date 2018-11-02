@@ -1,3 +1,4 @@
+# Java操作hdfs代码
 ```
 package com.lanou.test;
 
@@ -22,28 +23,30 @@ import org.junit.Test;
 public class HDFSTest2 {
 	private static FileSystem fileSystem;
 	
+	//创建文件夹
 	@Test
 	public void mkdirs() throws IOException {
 		
 		fileSystem.mkdirs(new Path("/list/"));
 	}
-	
+	//上传文件
 	@Test
 	public void upload() throws IOException {
 		
 		fileSystem.copyFromLocalFile(new Path("D:/hehe/hadoop-2.7.3.tar.gz"), new Path("/list"));
 	}
+	//下载文件
 	@Test
 	public void Download() throws IllegalArgumentException, IOException{
 		
 		fileSystem.copyToLocalFile(false, new Path("/taobao/java.md"), new Path("D:/hdfs/output/"), true);
 	}
-	
+	//删除文件
 	@Test
 	public void delete() throws IllegalArgumentException, IOException{
 		fileSystem.delete(new Path("/taobao"),false);
 	}
-	
+	//查看文件信息
 	@Test
 	public void findInfo() throws FileNotFoundException, IllegalArgumentException, IOException{
 		//迭代器
@@ -63,7 +66,7 @@ public class HDFSTest2 {
 			System.out.println(next);
 		}
 	}
-	
+	//流上传文件
 	@Test
 	public void uploadByStream() throws IllegalArgumentException, IOException{
 		//input
@@ -72,7 +75,7 @@ public class HDFSTest2 {
 		FSDataOutputStream hdfsOutputStream = fileSystem.create(new Path("/list/eclipse-jee-neon-3-win32-x86_64.zip"));
 		IOUtils.copyBytes(fileInputStream,hdfsOutputStream, 4096);
 	}
-	
+	//流下载文件
 	@Test
 	public void downloadByStream() throws IllegalArgumentException, IOException{
 		
@@ -80,7 +83,7 @@ public class HDFSTest2 {
 		FileOutputStream fileOutputStream = new FileOutputStream("D:/hdfs/output/in.txt");
 		org.apache.commons.io.IOUtils.copy(inputStream,fileOutputStream);
 	}
-	
+	//seek偏移下载
 	@Test
 	public void downloadBySeek() throws IllegalArgumentException, IOException{
 		
@@ -90,7 +93,7 @@ public class HDFSTest2 {
 		FileOutputStream fileOutputStream = new FileOutputStream("D:/hdfs/output/out.txt");
 		org.apache.commons.io.IOUtils.copy(inputStream,fileOutputStream);
 	}
-	
+	//只有两个block块下载第二个block块
 	@Test
 	public void downloadBlock() throws FileNotFoundException, IllegalArgumentException, IOException{
 		FSDataInputStream inputStream = fileSystem.open(new Path("/list/eclipse-jee-neon-3-win32-x86_64.zip"));
@@ -111,7 +114,7 @@ public class HDFSTest2 {
 		FileOutputStream fileOutputStream = new FileOutputStream("D:/hdfs/output/block2.zip");
 		org.apache.commons.io.IOUtils.copy(inputStream,fileOutputStream);
 	}
-	
+	//两个以上block块下载第二个
 	@Test
 	public void copyLargeBlock() throws FileNotFoundException, IllegalArgumentException, IOException{
 		FSDataInputStream inputStream = fileSystem.open(new Path("/list/eclipse-jee-neon-3-win32-x86_64.zip"));
@@ -131,6 +134,7 @@ public class HDFSTest2 {
 			}
 		}
 	}
+	//两个以上block块下载每个block块
 	@Test
 	public void copyLargeEachBlock() throws FileNotFoundException, IllegalArgumentException, IOException{
 		
@@ -152,7 +156,7 @@ public class HDFSTest2 {
 			}
 		}
 	}
-	
+	//用io流两个以上block块下载每个block块
 	@Test
 	public void copyIOEachBlock() throws FileNotFoundException, IllegalArgumentException, IOException{
 		
@@ -190,7 +194,7 @@ public class HDFSTest2 {
 		}
 	
 	}
-	
+	//连接hdfs
 	@Before
 	public void befores() throws IOException, URISyntaxException, InterruptedException{
 		
