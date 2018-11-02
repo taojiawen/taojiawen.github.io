@@ -1,4 +1,11 @@
 # Java操作hdfs代码
+
+### 第一步当然是向windows引hadoop包
+
+	项目右键 ->buildPath ->在libraries中选择add Library () ->userlibrary ->new  ->自定义名字->
+	add external JARS    ->将common下面的common-2.7.3 以及其依赖引入(依赖位于lib文件中) ,再将HDFS
+	文件夹中的hdfs-2.7.3及其依赖 引入
+
 ```
 package com.lanou.test;
 
