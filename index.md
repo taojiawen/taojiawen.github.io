@@ -17,3 +17,9 @@
 - hadoop
 	- [伪分布式环境搭建](http://taojiawen.github.io/hadoop/config)
 	- [完全分布式](http://taojiawen.github.io/hadoop/hadoop)
+	- [HDFS基本概念篇](http://taojiawen.github.io/hadoop/hdfs)
+	- [HDFS读写原理篇](http://taojiawen.github.io/hadoop/node)
+	- [NAMENODE工作机制](http://taojiawen.github.io/hadoop/namenode)
+	- [DATANODE的工作机制](http://taojiawen.github.io/hadoop/datanode)
+	- [HDFS应用开发篇](http://taojiawen.github.io/hadoop/javaHadoop)
+	- [Java操作hdfs代码](http://taojiawen.github.io/hadoop/javahdfs)
