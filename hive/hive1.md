@@ -4,8 +4,6 @@
 
 ![TIM截图20181114101356.png](https://upload-images.jianshu.io/upload_images/14465950-9490206d14c42dd5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-![TIM截图20181114102143.png](https://upload-images.jianshu.io/upload_images/14465950-49efe7d35f3dc149.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
 # hive表 
 
 ## 删除表(内部表是完整删除,外部表则只删除MySQL上元文件)
@@ -51,6 +49,10 @@
 ![TIM截图20181114102514.png](https://upload-images.jianshu.io/upload_images/14465950-74e026fec9f1198a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ![TIM截图20181114102919.png](https://upload-images.jianshu.io/upload_images/14465950-33e9737bd8860fbf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+## 总结
+
+![TIM截图20181114102143.png](https://upload-images.jianshu.io/upload_images/14465950-49efe7d35f3dc149.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 # 建一个分区表
 
