@@ -1,6 +1,12 @@
 # 内置函数
 
-## 求平均数
+## 常见分组聚合函数
+	sum(字段)  :  求这个字段在一个组中的所有值的和
+	avg(字段)  ： 求这个字段在一个组中的所有值的平均值
+	max(字段)  ：求这个字段在一个组中的所有值的最大值
+	min(字段)  ：求这个字段在一个组中的所有值的最小值
+
+### 求平均数
 
 ![TIM截图20181115190752.png](https://upload-images.jianshu.io/upload_images/14465950-ec108ea8a3b70f54.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
