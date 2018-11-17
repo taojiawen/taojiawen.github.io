@@ -110,7 +110,9 @@
 
 ![TIM截图20181116170249.png](https://upload-images.jianshu.io/upload_images/14465950-cf92b16d036e8bfc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-### 窗口分析函数
+## 窗口分析函数
+
+### row_number() over() 分组TOPN
 
 ![TIM截图20181116175408.png](https://upload-images.jianshu.io/upload_images/14465950-cc1256ea63401b0c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
