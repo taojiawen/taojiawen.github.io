@@ -143,10 +143,6 @@
 
 ![TIM图片20181114144719.png](https://upload-images.jianshu.io/upload_images/14465950-224bc7a4dc7fdda7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-## 使用内置函数
-
-![TIM截图20181114145924.png](https://upload-images.jianshu.io/upload_images/14465950-85ee820eab5192c0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
 ## insert 插入数据存储文件
 
 ![TIM截图20181114150321.png](https://upload-images.jianshu.io/upload_images/14465950-1a0dbd2b0b0e2c6b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
