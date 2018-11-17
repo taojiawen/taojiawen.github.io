@@ -165,6 +165,25 @@
 
 ![TIM截图20181114210034.png](https://upload-images.jianshu.io/upload_images/14465950-3ccd1c1aae7e88e0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
+# 创建分桶表
+
+![TIM截图20181115113011.png](https://upload-images.jianshu.io/upload_images/14465950-8f3223048a6f7aac.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+# 错误插入
+
+![TIM截图20181115113501.png](https://upload-images.jianshu.io/upload_images/14465950-19e106ad47c89de3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![TIM截图20181115113222.png](https://upload-images.jianshu.io/upload_images/14465950-c48ea3bb75a3840c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+# 设置强制分桶(分桶表多用于两个表根据一个外键分桶便于连表查询)
+
+![TIM截图20181115113545.png](https://upload-images.jianshu.io/upload_images/14465950-c890e9efe0ca9e77.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![TIM截图20181115113854.png](https://upload-images.jianshu.io/upload_images/14465950-05a313aa65d09f9f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![TIM截图20181115113909.png](https://upload-images.jianshu.io/upload_images/14465950-beca5a3c89ff6c8a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
 ## 总结
 
 ![TIM截图20181114175313.png](https://upload-images.jianshu.io/upload_images/14465950-05c162f925dfaad6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)

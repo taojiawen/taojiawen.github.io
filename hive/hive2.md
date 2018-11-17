@@ -1,23 +1,6 @@
-# 创建分桶表
+# hive查询语法
 
-![TIM截图20181115113011.png](https://upload-images.jianshu.io/upload_images/14465950-8f3223048a6f7aac.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-# 错误插入
-
-![TIM截图20181115113501.png](https://upload-images.jianshu.io/upload_images/14465950-19e106ad47c89de3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-![TIM截图20181115113222.png](https://upload-images.jianshu.io/upload_images/14465950-c48ea3bb75a3840c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-# 设置强制分桶(分桶表多用于两个表根据一个外键分桶便于连表查询)
-
-![TIM截图20181115113545.png](https://upload-images.jianshu.io/upload_images/14465950-c890e9efe0ca9e77.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-![TIM截图20181115113854.png](https://upload-images.jianshu.io/upload_images/14465950-05a313aa65d09f9f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-![TIM截图20181115113909.png](https://upload-images.jianshu.io/upload_images/14465950-beca5a3c89ff6c8a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-
-# 分组后操作
+# 分组
 
 ![TIM截图20181115191331.png](https://upload-images.jianshu.io/upload_images/14465950-b26cb34ac68a7d27.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
