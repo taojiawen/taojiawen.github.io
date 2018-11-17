@@ -1,29 +1,29 @@
 ## join 
-#### map¶ËµÄjoin£¨1£©£¨²»ĞèÒªreduce£©
-#### °ÑĞ¡±í·Ö·¢µ½map½Úµã»º´æÖĞ£¬ÕâÑùmapper¶Ë¾Í¿ÉÒÔÔÚ±¾µØ¶Ô×Ô¼ºµÄ´ó±íÊı¾İ½øĞĞjoin£¬²¢Êä³ö×îÖÕ½á¹û£¬Ìá¸ßjoin²Ù×÷²¢·¢¶È£¬¼Ó¿ì´¦ÀíËÙ¶È
+#### mapç«¯çš„joinï¼ˆ1ï¼‰ï¼ˆä¸éœ€è¦reduceï¼‰
+#### æŠŠå°è¡¨åˆ†å‘åˆ°mapèŠ‚ç‚¹ç¼“å­˜ä¸­ï¼Œè¿™æ ·mapperç«¯å°±å¯ä»¥åœ¨æœ¬åœ°å¯¹è‡ªå·±çš„å¤§è¡¨æ•°æ®è¿›è¡Œjoinï¼Œå¹¶è¾“å‡ºæœ€ç»ˆç»“æœï¼Œæé«˜joinæ“ä½œå¹¶å‘åº¦ï¼ŒåŠ å¿«å¤„ç†é€Ÿåº¦
  	
-	mapperÇø ×Ô¶¨Òåbean×÷Îªkey
-	setup()Ö»ÔÚmap³õÊ¼»¯ÉÏÖ´ĞĞÒ»´Î£¬ÔÚsetupÖĞ´¦Àí»º´æÎÄ¼ş£¬Ö±½ÓÓÃ±¾µØIO¶ÁÈ¡£¨maptask±¾µØ¹¤×÷Ä¿Â¼ÏÂµÄÒ»¸öĞ¡ÎÄ¼ş£©
+	mapperåŒº è‡ªå®šä¹‰beanä½œä¸ºkey
+	setup()åªåœ¨mapåˆå§‹åŒ–ä¸Šæ‰§è¡Œä¸€æ¬¡ï¼Œåœ¨setupä¸­å¤„ç†ç¼“å­˜æ–‡ä»¶ï¼Œç›´æ¥ç”¨æœ¬åœ°IOè¯»å–ï¼ˆmaptaskæœ¬åœ°å·¥ä½œç›®å½•ä¸‹çš„ä¸€ä¸ªå°æ–‡ä»¶ï¼‰
 ```
 	public class JoinMapper extends Mapper<Object, Text, MapJoinBean, NullWritable> {
 	private MapJoinBean mapJoinBean = new MapJoinBean();
-	//ÓÃÒ»¸ömapÊôĞÔ´æsetupÖĞ»ñÈ¡µÄ´Ó±íµÄÊı¾İ
+	//ç”¨ä¸€ä¸ªmapå±æ€§å­˜setupä¸­è·å–çš„ä»è¡¨çš„æ•°æ®
 	private Map<String,MapJoinBean> containMap = new HashMap<>();
 	
 	//private Text keyText = new Text();
 	
 	
-	//ÔÚmapÖ®Ç°Ö´ĞĞÒ»´Î
+	//åœ¨mapä¹‹å‰æ‰§è¡Œä¸€æ¬¡
 	@Override
 	protected void setup(Mapper<Object, Text, MapJoinBean,NullWritable>.Context context)
 			throws IOException, InterruptedException {
 		// TODO Auto-generated method stub
-		//ÏÈ°´Á÷¶Á¿ÉÒÔ¿¼ÂÇ±àÂëÎÊÌâ
-		//Reader¿ÉÒÔ°´ĞĞ¶Á
+		//å…ˆæŒ‰æµè¯»å¯ä»¥è€ƒè™‘ç¼–ç é—®é¢˜
+		//Readerå¯ä»¥æŒ‰è¡Œè¯»
 		FileInputStream fileInputStream = new FileInputStream("goods.txt");
 		BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(fileInputStream));
 		String line = null;
-		//¶¨ÒåÒ»¸öÈİÆ÷´æ»ñÈ¡µÄÊı¾İ(map)
+		//å®šä¹‰ä¸€ä¸ªå®¹å™¨å­˜è·å–çš„æ•°æ®(map)
 		while (StringUtils.isNotEmpty(line = bufferedReader.readLine())) {
 			System.out.println("line" + line);
 			String[] goods = line.split("\\s+");
@@ -41,7 +41,7 @@
 		// TODO Auto-generated method stub
 		String[] vals = value.toString().split("\\s+");
 		mapJoinBean.setOrder(vals[0], vals[2], vals[3]);
-		//¸ù¾İgoodsIdÕÒµ½ÉÌÆ·½øĞĞÊı¾İÌî³ä
+		//æ ¹æ®goodsIdæ‰¾åˆ°å•†å“è¿›è¡Œæ•°æ®å¡«å……
 		MapJoinBean goodsBean = containMap.get(mapJoinBean.getGoodsId());
 		mapJoinBean.setGoods(goodsBean.getGoodsName(), goodsBean.getStockCount());
 		//keyText.set(mapJoinBean.getGoodsId());
@@ -49,12 +49,12 @@
 	}
 }
 ```
-	driverÇø½«hdfsÉÏÊı¾İ·ÅÈë»º´æ
+	driveråŒºå°†hdfsä¸Šæ•°æ®æ”¾å…¥ç¼“å­˜
 ```	
 	job.addCacheFile(new URI("hdfs://172.18.24.195:9000/input/goods.txt"));
 ```
   
-## map¶ËµÄjoin£¨2£©£¨ĞèÒªreduce£©
+## mapç«¯çš„joinï¼ˆ2ï¼‰ï¼ˆéœ€è¦reduceï¼‰
  
 	bean
 ```
@@ -73,7 +73,7 @@
 	@Override
 	public int compareTo(MapJoinBean arg0) {
 		// TODO Auto-generated method stub
-		//ÏÈ°´orderIDÅÅĞòÔÙ°´goodsIDÅÅĞò
+		//å…ˆæŒ‰orderIDæ’åºå†æŒ‰goodsIDæ’åº
 		int result = - (this.getOrderId()-arg0.getOrderId());
 		if (result == 0) {
 			result = - this.getGoodsId().compareTo(arg0.getGoodsId());
@@ -82,16 +82,16 @@
 	}
 ```
 
-	mapper¶Ë 
-	setupÍ¬£¨1£©ÖĞµÄsetup
-	map °Ñ×Ô¶¨Òåbean×÷Îªvalue
+	mapperç«¯ 
+	setupåŒï¼ˆ1ï¼‰ä¸­çš„setup
+	map æŠŠè‡ªå®šä¹‰beanä½œä¸ºvalue
 ```
 protected void map(Object key, Text value, Mapper<Object, Text, Text, MapJoinBean>.Context context)
 			throws IOException, InterruptedException {
 		// TODO Auto-generated method stub
 		String[] vals = value.toString().split("\\s+");
 		mapJoinBean.setOrder(vals[0], vals[2], vals[3]);
-		//¸ù¾İgoodsIdÕÒµ½ÉÌÆ·½øĞĞÊı¾İÌî³ä
+		//æ ¹æ®goodsIdæ‰¾åˆ°å•†å“è¿›è¡Œæ•°æ®å¡«å……
 		MapJoinBean goodsBean = containMap.get(mapJoinBean.getGoodsId());
 		mapJoinBean.setGoods(goodsBean.getGoodsName(), goodsBean.getStockCount());
 		keyText.set(mapJoinBean.getGoodsId());
@@ -99,7 +99,7 @@ protected void map(Object key, Text value, Mapper<Object, Text, Text, MapJoinBea
 	}
 ```
       
-* reducer¶Ë
+* reducerç«¯
 ```
 @Override
 	protected void reduce(OrderInfo orderInfo, Iterable<NullWritable> arg1,
@@ -109,6 +109,6 @@ protected void map(Object key, Text value, Mapper<Object, Text, Text, MapJoinBea
 		context.write(orderInfo, NullWritable.get());
 	}  
 ```	
- * Ğ¡½á
+ * å°ç»“
  
     ![image.png](https://upload-images.jianshu.io/upload_images/14466577-4368d0de22ea8d79.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
