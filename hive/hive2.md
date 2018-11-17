@@ -6,11 +6,11 @@
 
 # 排序
 
-order by：会对输入做全局排序，因此只有一个reducer，只有一个 reduce task的结果，比如文件名是000000_0，会导致当输入规模较大时，需要较长的计算时间
-sort by：不是全局排序，其在数据进入reducer前完成排序。因此，如果用sort by进行排序，并且设置mapred.reduce.tasks>1，则 sort by只保证每个reducer的输出有序，不保证全局有序
-distribute by：根据指定的字段将数据分到不同的reducer，且分发算法是hash散列
-Cluster by：除了具有Distribute by的功能外，还会对该字段进行排序。因此，如果分桶和sort字段是同一个时，此时clustered by = distribute by + sort by如果我们要分桶的字段和要
-排序的字段不一样，那么我们就不能适用clustered by。分桶表的作用：最大的作用是用来提高 join 操作的效率
+	order by：会对输入做全局排序，因此只有一个reducer，只有一个 reduce task的结果，比如文件名是000000_0，会导致当输入规模较大时，需要较长的计算时间
+	sort by：不是全局排序，其在数据进入reducer前完成排序。因此，如果用sort by进行排序，并且设置mapred.reduce.tasks>1，则 sort by只保证每个reducer的输出有序，不保证全局有序
+	distribute by：根据指定的字段将数据分到不同的reducer，且分发算法是hash散列
+	Cluster by：除了具有Distribute by的功能外，还会对该字段进行排序。因此，如果分桶和sort字段是同一个时，此时clustered by = distribute by + sort by如果我们要分桶的字段和要
+	排序的字段不一样，那么我们就不能适用clustered by。分桶表的作用：最大的作用是用来提高 join 操作的效率
 
 
 ![TIM截图20181115192142.png](https://upload-images.jianshu.io/upload_images/14465950-f51444bddf9dd04c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
