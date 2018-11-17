@@ -23,3 +23,8 @@
 	- [DATANODE的工作机制](http://taojiawen.github.io/hadoop/datanode)
 	- [HDFS应用开发篇](http://taojiawen.github.io/hadoop/javaHadoop)
 	- [Java操作hdfs代码](http://taojiawen.github.io/hadoop/javahdfs)
+- hive
+	- [hive简介](http://taojiawen.github.io/hive/hive0)
+	- [hive库表操作](http://taojiawen.github.io/hive/hive1)
+	- [hive查询语法和数据类型](http://taojiawen.github.io/hive/hive2)
+	- [hive内置函数](http://taojiawen.github.io/hive/hive3)
