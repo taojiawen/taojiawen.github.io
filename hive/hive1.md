@@ -4,6 +4,17 @@
 
 ![TIM截图20181114101356.png](https://upload-images.jianshu.io/upload_images/14465950-9490206d14c42dd5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
+# hive库
+
+	hive中有一个默认的库：
+	库名： default
+	库目录：hdfs://hdp20-01:9000/user/hive/warehouse
+
+	新建库：
+	create database db_order;
+	库建好后，在hdfs中会生成一个库目录：
+	hdfs://hdp20-01:9000/user/hive/warehouse/db_order.db
+
 # hive表 
 
 ## 删除表(内部表是完整删除,外部表则只删除MySQL上元文件)
