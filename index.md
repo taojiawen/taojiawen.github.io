@@ -17,12 +17,21 @@
 - hadoop
 	- [伪分布式环境搭建](http://taojiawen.github.io/hadoop/config)
 	- [完全分布式](http://taojiawen.github.io/hadoop/hadoop)
+	- hdfs
 	- [HDFS基本概念篇](http://taojiawen.github.io/hadoop/hdfs)
 	- [HDFS读写原理篇](http://taojiawen.github.io/hadoop/node)
 	- [NAMENODE工作机制](http://taojiawen.github.io/hadoop/namenode)
 	- [DATANODE的工作机制](http://taojiawen.github.io/hadoop/datanode)
 	- [HDFS应用开发篇](http://taojiawen.github.io/hadoop/javaHadoop)
 	- [Java操作hdfs代码](http://taojiawen.github.io/hadoop/javahdfs)
+	- mapreduce
+	- [MapReduce](http://taojiawen.github.io/hadoop/mapreduce1)
+	- [MapReduce](http://taojiawen.github.io/hadoop/mapreduce2)
+	- [MapReduce](http://taojiawen.github.io/hadoop/mapreduce3)
+	- [MapReduce](http://taojiawen.github.io/hadoop/mapreduce4)
+	- [MapReduce](http://taojiawen.github.io/hadoop/mapreduce5)
+	- [MapReduce](http://taojiawen.github.io/hadoop/mapreduce6)
+	- [MapReduce](http://taojiawen.github.io/hadoop/mapreduce7)
 - hive
 	- [hive简介](http://taojiawen.github.io/hive/hive0)
 	- [hive库表操作](http://taojiawen.github.io/hive/hive1)

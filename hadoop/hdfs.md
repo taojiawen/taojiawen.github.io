@@ -8,7 +8,8 @@
 
 	重要特性如下：
 	
-	（1）HDFS中的文件在物理上是分块存储（block），块的大小可以通过配置参数( dfs.blocksize)来规定，
+	（1）HDFS中的文件在物理上是分块存储（block），块的大小可以通过配置参数
+		( dfs.blocksize)来规定，
 	
 	默认大小在hadoop2.x版本中是128M，老版本中是64M
 
@@ -18,19 +19,22 @@
 
 	（3）目录结构及文件分块信息(元数据)的管理由namenode节点承担
 	
-	——namenode是HDFS集群主节点，负责维护整个hdfs文件系统的目录树，以及每一个路径（文件）所对应的
+	——namenode是HDFS集群主节点，负责维护整个hdfs文件系统的目录树，以及每一个路径（文件）
+	所对应的
 	
 	block块信息（block的id，及所在的datanode服务器）
 
 	（4）文件的各个block的存储管理由datanode节点承担
 	
-	---- datanode是HDFS集群从节点，每一个block都可以在多个datanode上存储多个副本（副本数量也可以
+	---- datanode是HDFS集群从节点，每一个block都可以在多个datanode上存储多个副本（副本数量
+	也可以
 	
 	通过参数设置dfs.replication）
 
 	（5）HDFS是设计成适应一次写入，多次读出的场景，且不支持文件的修改
 
-	(注：适合用来做数据分析，并不适合用来做网盘应用，因为，不便修改，延迟大，网络开销大，成本太高)
+	(注：适合用来做数据分析，并不适合用来做网盘应用，因为，不便修改，延迟大，网络开销大，成
+	本太高)
 	
 ## HDFS的shell(命令行客户端)操作
 	 
@@ -40,42 +44,42 @@ HDFS提供shell命令行客户端，使用方法如下：
 
 3.2 命令行客户端支持的命令参数
 
-        [-appendToFile <localsrc> ... <dst>]
-        [-cat [-ignoreCrc] <src> ...]
-        [-checksum <src> ...]
-        [-chgrp [-R] GROUP PATH...]
-        [-chmod [-R] <MODE[,MODE]... | OCTALMODE> PATH...]
-        [-chown [-R] [OWNER][:[GROUP]] PATH...]
-        [-copyFromLocal [-f] [-p] <localsrc> ... <dst>]
-        [-copyToLocal [-p] [-ignoreCrc] [-crc] <src> ... <localdst>]
-        [-count [-q] <path> ...]
-        [-cp [-f] [-p] <src> ... <dst>]
-        [-createSnapshot <snapshotDir> [<snapshotName>]]
-        [-deleteSnapshot <snapshotDir> <snapshotName>]
-        [-df [-h] [<path> ...]]
-        [-du [-s] [-h] <path> ...]
-        [-expunge]
-        [-get [-p] [-ignoreCrc] [-crc] <src> ... <localdst>]
-        [-getfacl [-R] <path>]
-        [-getmerge [-nl] <src> <localdst>]
-        [-help [cmd ...]]
-        [-ls [-d] [-h] [-R] [<path> ...]]
-        [-mkdir [-p] <path> ...]
-        [-moveFromLocal <localsrc> ... <dst>]
-        [-moveToLocal <src> <localdst>]
-        [-mv <src> ... <dst>]
-        [-put [-f] [-p] <localsrc> ... <dst>]
-        [-renameSnapshot <snapshotDir> <oldName> <newName>]
-        [-rm [-f] [-r|-R] [-skipTrash] <src> ...]
-        [-rmdir [--ignore-fail-on-non-empty] <dir> ...]
-        [-setfacl [-R] [{-b|-k} {-m|-x <acl_spec>} <path>]|[--set <acl_spec> <path>]]
-        [-setrep [-R] [-w] <rep> <path> ...]
-        [-stat [format] <path> ...]
-        [-tail [-f] <file>]
-        [-test -[defsz] <path>]
-        [-text [-ignoreCrc] <src> ...]
-        [-touchz <path> ...]
-        [-usage [cmd ...]]
+    [-appendToFile <localsrc> ... <dst>]
+    [-cat [-ignoreCrc] <src> ...]
+    [-checksum <src> ...]
+    [-chgrp [-R] GROUP PATH...]
+    [-chmod [-R] <MODE[,MODE]... | OCTALMODE> PATH...]
+    [-chown [-R] [OWNER][:[GROUP]] PATH...]
+    [-copyFromLocal [-f] [-p] <localsrc> ... <dst>]
+    [-copyToLocal [-p] [-ignoreCrc] [-crc] <src> ... <localdst>]
+    [-count [-q] <path> ...]
+    [-cp [-f] [-p] <src> ... <dst>]
+    [-createSnapshot <snapshotDir> [<snapshotName>]]
+    [-deleteSnapshot <snapshotDir> <snapshotName>]
+    [-df [-h] [<path> ...]]
+    [-du [-s] [-h] <path> ...]
+    [-expunge]
+    [-get [-p] [-ignoreCrc] [-crc] <src> ... <localdst>]
+    [-getfacl [-R] <path>]
+    [-getmerge [-nl] <src> <localdst>]
+    [-help [cmd ...]]
+    [-ls [-d] [-h] [-R] [<path> ...]]
+    [-mkdir [-p] <path> ...]
+    [-moveFromLocal <localsrc> ... <dst>]
+    [-moveToLocal <src> <localdst>]
+    [-mv <src> ... <dst>]
+    [-put [-f] [-p] <localsrc> ... <dst>]
+    [-renameSnapshot <snapshotDir> <oldName> <newName>]
+    [-rm [-f] [-r|-R] [-skipTrash] <src> ...]
+    [-rmdir [--ignore-fail-on-non-empty] <dir> ...]
+    [-setfacl [-R] [{-b|-k} {-m|-x <acl_spec>} <path>]|[--set <acl_spec> <path>]]
+    [-setrep [-R] [-w] <rep> <path> ...]
+	[-stat [format] <path> ...]
+	[-tail [-f] <file>]
+	[-test -[defsz] <path>]
+	[-text [-ignoreCrc] <src> ...]
+	[-touchz <path> ...]
+	[-usage [cmd ...]]
 
 ### 常用命令参数介绍
 
@@ -102,7 +106,8 @@ HDFS提供shell命令行客户端，使用方法如下：
 
 	--appendToFile  
 	功能：追加一个文件到已经存在的文件末尾
-	示例：hadoop  fs  -appendToFile  ./hello.txt  hdfs://hadoop-server01:9000/hello.txt
+	示例：
+	hadoop fs -appendToFile ./hello.txt hdfs://hadoop-server01:9000/hello.txt
 	可以简写为：
 	Hadoop  fs  -appendToFile  ./hello.txt  /hello.txt
 
