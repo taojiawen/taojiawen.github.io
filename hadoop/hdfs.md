@@ -26,7 +26,7 @@
 
 	（4）文件的各个block的存储管理由datanode节点承担
 	
-	---- datanode是HDFS集群从节点，每一个block都可以在多个datanode上存储多个副本（副本数
+	-- datanode是HDFS集群从节点，每一个block都可以在多个datanode上存储多个副本（副本数
 	量也可以通过参数设置dfs.replication）
 
 	（5）HDFS是设计成适应一次写入，多次读出的场景，且不支持文件的修改
