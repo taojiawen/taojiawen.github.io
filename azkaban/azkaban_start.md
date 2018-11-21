@@ -18,13 +18,13 @@
 
 ![TIM截图20181121110815.png](https://upload-images.jianshu.io/upload_images/14465950-e858e16797a25f42.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-### 3.ssl配置(密码记住后面要用)
+### 3.ssl设置(密码记住后面要用)
+
+	keytool -keystore keystore -alias jetty -genkey -keyalg RSA
 
 ![TIM截图20181121100554.png](https://upload-images.jianshu.io/upload_images/14465950-0f326339302f4333.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ### 4.生成的keystore放到web下
-
-	keytool -keystore keystore -alias jetty -genkey -keyalg RSA
 
 ![TIM截图20181121100729.png](https://upload-images.jianshu.io/upload_images/14465950-7da6fec589fd01b5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
