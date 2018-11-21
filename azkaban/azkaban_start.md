@@ -1,30 +1,32 @@
-# azkaban配置
+# azkaban 工作流调度器
 
-1.三个压缩包解压放到一个文件夹下好管理
+## azkaban配置
 
-2.MySQL下执行sql语句
+### 1.三个压缩包解压放到一个文件夹下好管理
+
+### 2.MySQL下执行sql语句
 
 ![TIM截图20181121095802.png](https://upload-images.jianshu.io/upload_images/14465950-147874b28ef63e80.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-2.1数据库里生成表
+### 2.1数据库里生成表
 
 ![TIM截图20181121110815.png](https://upload-images.jianshu.io/upload_images/14465950-e858e16797a25f42.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-3.ssl配置(密码记住后面要用)
+### 3.ssl配置(密码记住后面要用)
 
 ![TIM截图20181121100554.png](https://upload-images.jianshu.io/upload_images/14465950-0f326339302f4333.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-4.生成的keystore放到web下
+### 4.生成的keystore放到web下
 
 	keytool -keystore keystore -alias jetty -genkey -keyalg RSA
 
 ![TIM截图20181121100729.png](https://upload-images.jianshu.io/upload_images/14465950-7da6fec589fd01b5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-5.配置web配置proprerties文件
+### 5.配置web配置proprerties文件
 
 ![TIM截图20181121100915.png](https://upload-images.jianshu.io/upload_images/14465950-7561fa2d57dbb63d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-5.1修改时区
+### 5.1修改时区
 
 	Asia/Shanghai
 
@@ -104,37 +106,51 @@ ps 服务启动成功
 
 ![TIM截图20181121112300.png](https://upload-images.jianshu.io/upload_images/14465950-04e85bc105f27c4b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-例子1(依赖 两个文件一起压缩)
+### 通过command命令来执行
+	
+	type=command
+	command=真正要执行的命令
 
-		start.job
-		
-		type=command
-		command=echo start
-		
-		end.job
-		
-		type=command
-		dependencies=start
-		command=echo end
-		
-例子2(操作hdfs)
+### 例子1(依赖 两个文件一起压缩 可以有先后顺序 依赖的job先执行完再执行自身 dependencies=job的名称)
 
-		hdfs.job
-
-		type=command
-		command=hadoop fs -mkdir /azkaban
+	start.job
 		
-	执行命令工作文件夹 	
+	type=command
+	command=echo start
+		
+	end.job
+		
+	type=command
+	dependencies=start
+	command=echo end
+		
+### 例子2(执行hdfs命令)
+
+	hdfs.job
+
+	type=command
+	command=hadoop fs -mkdir /azkaban
+		
+#### 执行命令工作文件夹 	
 	
 ![TIM截图20181121115051.png](https://upload-images.jianshu.io/upload_images/14465950-3c819c61c32f696a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 	
-例子3(使用jar包 和hadoop-mapreduce-examples-2.6.1.jar一起压缩)
+### 例子3(执行MapReduce job中设置要执行的命令 job和jar包一起压缩)
 		
-		wordcount.job
+	wordcount.job
 		
-		type=command
-		command=hadoop jar hadoop-mapreduce-examples-2.6.1.jar wordcount /acinput /acoutput
-		
-		
+	type=command
+	command=hadoop jar hadoop-mapreduce-examples-2.6.1.jar wordcount /acinput /acoutput
+	
+### 例子4(执行hive命令)
+
+	hive-e.job
+	
+	type=command
+	command=hive -e 'select * from datatao.orders';
+
+执行结果
+	
+![TIM截图20181121145149.png](https://upload-images.jianshu.io/upload_images/14465950-b6cd04ee481579f1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)		
 		
 		
