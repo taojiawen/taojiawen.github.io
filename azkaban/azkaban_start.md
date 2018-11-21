@@ -1,110 +1,110 @@
-# azkabanÅäÖÃ
+# azkabané…ç½®
 
-1.Èı¸öÑ¹Ëõ°ü½âÑ¹·Åµ½Ò»¸öÎÄ¼ş¼ĞÏÂºÃ¹ÜÀí
+1.ä¸‰ä¸ªå‹ç¼©åŒ…è§£å‹æ”¾åˆ°ä¸€ä¸ªæ–‡ä»¶å¤¹ä¸‹å¥½ç®¡ç†
 
-2.MySQLÏÂÖ´ĞĞsqlÓï¾ä
+2.MySQLä¸‹æ‰§è¡Œsqlè¯­å¥
 
-![TIM½ØÍ¼20181121095802.png](https://upload-images.jianshu.io/upload_images/14465950-147874b28ef63e80.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIMæˆªå›¾20181121095802.png](https://upload-images.jianshu.io/upload_images/14465950-147874b28ef63e80.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-2.1Êı¾İ¿âÀïÉú³É±í
+2.1æ•°æ®åº“é‡Œç”Ÿæˆè¡¨
 
-![TIM½ØÍ¼20181121110815.png](https://upload-images.jianshu.io/upload_images/14465950-e858e16797a25f42.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIMæˆªå›¾20181121110815.png](https://upload-images.jianshu.io/upload_images/14465950-e858e16797a25f42.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-3.sslÅäÖÃ(ÃÜÂë¼Ç×¡ºóÃæÒªÓÃ)
+3.sslé…ç½®(å¯†ç è®°ä½åé¢è¦ç”¨)
 
-![TIM½ØÍ¼20181121100554.png](https://upload-images.jianshu.io/upload_images/14465950-0f326339302f4333.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIMæˆªå›¾20181121100554.png](https://upload-images.jianshu.io/upload_images/14465950-0f326339302f4333.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-4.Éú³ÉµÄkeystore·Åµ½webÏÂ
+4.ç”Ÿæˆçš„keystoreæ”¾åˆ°webä¸‹
 
 	keytool -keystore keystore -alias jetty -genkey -keyalg RSA
 
-![TIM½ØÍ¼20181121100729.png](https://upload-images.jianshu.io/upload_images/14465950-7da6fec589fd01b5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIMæˆªå›¾20181121100729.png](https://upload-images.jianshu.io/upload_images/14465950-7da6fec589fd01b5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-5.ÅäÖÃwebÅäÖÃproprertiesÎÄ¼ş
+5.é…ç½®webé…ç½®proprertiesæ–‡ä»¶
 
-![TIM½ØÍ¼20181121100915.png](https://upload-images.jianshu.io/upload_images/14465950-7561fa2d57dbb63d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIMæˆªå›¾20181121100915.png](https://upload-images.jianshu.io/upload_images/14465950-7561fa2d57dbb63d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-5.1ĞŞ¸ÄÊ±Çø
+5.1ä¿®æ”¹æ—¶åŒº
 
 	Asia/Shanghai
 
-![TIM½ØÍ¼20181121101440.png](https://upload-images.jianshu.io/upload_images/14465950-0f7455ab06289c6c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIMæˆªå›¾20181121101440.png](https://upload-images.jianshu.io/upload_images/14465950-0f7455ab06289c6c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-5.2ĞŞ¸ÄMySQLÅäÖÃ
+5.2ä¿®æ”¹MySQLé…ç½®
 
-![TIM½ØÍ¼20181121101419.png](https://upload-images.jianshu.io/upload_images/14465950-c2f197b403e46fab.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIMæˆªå›¾20181121101419.png](https://upload-images.jianshu.io/upload_images/14465950-c2f197b403e46fab.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-5.3ĞŞ¸ÄsslÅäÖÃ(Ö®Ç°ÉèÖÃµÄÃÜÂë)
+5.3ä¿®æ”¹sslé…ç½®(ä¹‹å‰è®¾ç½®çš„å¯†ç )
 
-![TIM½ØÍ¼20181121101535.png](https://upload-images.jianshu.io/upload_images/14465950-bf1c4e256d2da974.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIMæˆªå›¾20181121101535.png](https://upload-images.jianshu.io/upload_images/14465950-bf1c4e256d2da974.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-6.ÅäÖÃwebÅäÖÃusersÎÄ¼ş
+6.é…ç½®webé…ç½®usersæ–‡ä»¶
 
 	<user username="admin" password="admin" roles="admin,metrics" />
 
-![TIM½ØÍ¼20181121101945.png](https://upload-images.jianshu.io/upload_images/14465950-88ed1667da9ac818.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIMæˆªå›¾20181121101945.png](https://upload-images.jianshu.io/upload_images/14465950-88ed1667da9ac818.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-7.ÅäÖÃexecutorÖ´ĞĞÆ÷
+7.é…ç½®executoræ‰§è¡Œå™¨
 
-![TIM½ØÍ¼20181121102117.png](https://upload-images.jianshu.io/upload_images/14465950-dd22192e0964e068.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIMæˆªå›¾20181121102117.png](https://upload-images.jianshu.io/upload_images/14465950-dd22192e0964e068.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-7.1ÅäÖÃproprertiesÎÄ¼ş
+7.1é…ç½®proprertiesæ–‡ä»¶
 
-![TIM½ØÍ¼20181121102257.png](https://upload-images.jianshu.io/upload_images/14465950-0925540140587b18.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIMæˆªå›¾20181121102257.png](https://upload-images.jianshu.io/upload_images/14465950-0925540140587b18.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-8.Æô¶¯executor·şÎñ
+8.å¯åŠ¨executoræœåŠ¡
 
-![TIM½ØÍ¼20181121102341.png](https://upload-images.jianshu.io/upload_images/14465950-0b4756e0745d7847.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIMæˆªå›¾20181121102341.png](https://upload-images.jianshu.io/upload_images/14465950-0b4756e0745d7847.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-8.1ÔÚ´íÎóÎÄ¼ş¼ĞÏÂ²»ÄÜÖ´ĞĞ
+8.1åœ¨é”™è¯¯æ–‡ä»¶å¤¹ä¸‹ä¸èƒ½æ‰§è¡Œ
 
-![TIM½ØÍ¼20181121102502.png](https://upload-images.jianshu.io/upload_images/14465950-0a895d8cff31b512.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIMæˆªå›¾20181121102502.png](https://upload-images.jianshu.io/upload_images/14465950-0a895d8cff31b512.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-8.2 ÔÚexecutor¸ùÄ¿Â¼ÏÂÓÃÏà¶ÔÂ·¾¶Ö´ĞĞ
+8.2 åœ¨executoræ ¹ç›®å½•ä¸‹ç”¨ç›¸å¯¹è·¯å¾„æ‰§è¡Œ
 
-![TIM½ØÍ¼20181121102703.png](https://upload-images.jianshu.io/upload_images/14465950-b387f8e6b520dd93.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIMæˆªå›¾20181121102703.png](https://upload-images.jianshu.io/upload_images/14465950-b387f8e6b520dd93.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-9.Æô¶¯web·şÎñ
+9.å¯åŠ¨webæœåŠ¡
 
-![TIM½ØÍ¼20181121102818.png](https://upload-images.jianshu.io/upload_images/14465950-2ba059b80e970a6e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIMæˆªå›¾20181121102818.png](https://upload-images.jianshu.io/upload_images/14465950-2ba059b80e970a6e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-![TIM½ØÍ¼20181121102908.png](https://upload-images.jianshu.io/upload_images/14465950-291550f248e0d082.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIMæˆªå›¾20181121102908.png](https://upload-images.jianshu.io/upload_images/14465950-291550f248e0d082.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-ps ·şÎñÆô¶¯³É¹¦
+ps æœåŠ¡å¯åŠ¨æˆåŠŸ
 
-![TIM½ØÍ¼20181121103022.png](https://upload-images.jianshu.io/upload_images/14465950-72ae8eccdc67921a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIMæˆªå›¾20181121103022.png](https://upload-images.jianshu.io/upload_images/14465950-72ae8eccdc67921a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-10.ä¯ÀÀÆ÷·ÃÎÊ(×¢ÒâÓÃHTTPS ¶Ë¿Ú8443)
+10.æµè§ˆå™¨è®¿é—®(æ³¨æ„ç”¨HTTPS ç«¯å£8443)
 
-![TIM½ØÍ¼20181121103122.png](https://upload-images.jianshu.io/upload_images/14465950-329eafe8a328f864.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIMæˆªå›¾20181121103122.png](https://upload-images.jianshu.io/upload_images/14465950-329eafe8a328f864.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-10.1µÇÂ¼ÃûÃÜÂë¾ÍÊÇÎÒÃÇÉèÖÃµÄ³¬¼¶ÓÃ»§
+10.1ç™»å½•åå¯†ç å°±æ˜¯æˆ‘ä»¬è®¾ç½®çš„è¶…çº§ç”¨æˆ·
 
-![TIM½ØÍ¼20181121103142.png](https://upload-images.jianshu.io/upload_images/14465950-e5dd78a90ff04c67.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIMæˆªå›¾20181121103142.png](https://upload-images.jianshu.io/upload_images/14465950-e5dd78a90ff04c67.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-11.ĞÂ½¨¹¤³Ì
+11.æ–°å»ºå·¥ç¨‹
 
-![TIM½ØÍ¼20181121113841.png](https://upload-images.jianshu.io/upload_images/14465950-9afc6ecaa23bc97f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIMæˆªå›¾20181121113841.png](https://upload-images.jianshu.io/upload_images/14465950-9afc6ecaa23bc97f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-12.ÉÏ´«¹¤×÷
+12.ä¸Šä¼ å·¥ä½œ
 
-![TIM½ØÍ¼20181121111640.png](https://upload-images.jianshu.io/upload_images/14465950-70bb046701079f25.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIMæˆªå›¾20181121111640.png](https://upload-images.jianshu.io/upload_images/14465950-70bb046701079f25.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-12.1ÉÏ´«µÄ±ØĞëÊÇzip¸ñÊ½µÄÑ¹Ëõ°ü(.jobÎÄ¼ş)
+12.1ä¸Šä¼ çš„å¿…é¡»æ˜¯zipæ ¼å¼çš„å‹ç¼©åŒ…(.jobæ–‡ä»¶)
 
-![TIM½ØÍ¼20181121111750.png](https://upload-images.jianshu.io/upload_images/14465950-48989b713ee8c5ad.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIMæˆªå›¾20181121111750.png](https://upload-images.jianshu.io/upload_images/14465950-48989b713ee8c5ad.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-13.Ö´ĞĞ¹¤×÷
+13.æ‰§è¡Œå·¥ä½œ
 
-![TIM½ØÍ¼20181121112030.png](https://upload-images.jianshu.io/upload_images/14465950-b53a9a3dfd7953b0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIMæˆªå›¾20181121112030.png](https://upload-images.jianshu.io/upload_images/14465950-b53a9a3dfd7953b0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-![TIM½ØÍ¼20181121112132.png](https://upload-images.jianshu.io/upload_images/14465950-63b9969384573ea3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIMæˆªå›¾20181121112132.png](https://upload-images.jianshu.io/upload_images/14465950-63b9969384573ea3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-14.²é¿´ÏêÇé
+14.æŸ¥çœ‹è¯¦æƒ…
 
-![TIM½ØÍ¼20181121112300.png](https://upload-images.jianshu.io/upload_images/14465950-04e85bc105f27c4b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIMæˆªå›¾20181121112300.png](https://upload-images.jianshu.io/upload_images/14465950-04e85bc105f27c4b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-Àı×Ó1(ÒÀÀµ)
+ä¾‹å­1(ä¾èµ–)
 
 		start.job
 		
@@ -117,16 +117,16 @@ ps ·şÎñÆô¶¯³É¹¦
 		dependencies=start
 		command=echo end
 		
-Àı×Ó2(²Ù×÷hdfs)
+ä¾‹å­2(æ“ä½œhdfs)
 
 		hdfs.job
 
 		type=command
 		command=hadoop fs -mkdir /azkaban
 		
-	Ö´ĞĞÃüÁî¹¤×÷ÎÄ¼ş¼Ğ 	
+	æ‰§è¡Œå‘½ä»¤å·¥ä½œæ–‡ä»¶å¤¹ 	
 	
-![TIM½ØÍ¼20181121115051.png](https://upload-images.jianshu.io/upload_images/14465950-3c819c61c32f696a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIMæˆªå›¾20181121115051.png](https://upload-images.jianshu.io/upload_images/14465950-3c819c61c32f696a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 	
 		
 		
