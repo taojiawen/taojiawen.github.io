@@ -130,7 +130,7 @@ ps 服务启动成功
 	
 例子3(使用jar包 和hadoop-mapreduce-examples-2.6.1.jar一起压缩)
 		
-		wc.job
+		wordcount.job
 		
 		type=command
 		command=hadoop jar hadoop-mapreduce-examples-2.6.1.jar wordcount /acinput /acoutput
