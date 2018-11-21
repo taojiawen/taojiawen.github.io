@@ -4,7 +4,13 @@
 
 ### 1.三个压缩包解压放到一个文件夹下好管理
 
+	azkaban-2.5.0 存放 azkaban 运行需要的sql (sql执行完就不需要了)
+	azkaban-executor-2.5.0 存放执行器
+	azkaban-web-2.5.0 存放web服务器
+
 ### 2.MySQL下执行sql语句
+
+	只需执行其中create-all-sql-2.5.0.sql
 
 ![TIM截图20181121095802.png](https://upload-images.jianshu.io/upload_images/14465950-147874b28ef63e80.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -36,11 +42,11 @@
 
 ![TIM截图20181121101419.png](https://upload-images.jianshu.io/upload_images/14465950-c2f197b403e46fab.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-### 5.3修改ssl配置(之前设置的密码)
+### 5.3修改jetty(ssl)配置(之前设置ssl的密码)
 
 ![TIM截图20181121101535.png](https://upload-images.jianshu.io/upload_images/14465950-bf1c4e256d2da974.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-### 6.配置web配置users文件
+### 6.配置web配置users文件(设置登录azkaban用户和权限)
 
 	<user username="admin" password="admin" roles="admin,metrics" />
 
@@ -54,7 +60,7 @@
 
 ![TIM截图20181121102257.png](https://upload-images.jianshu.io/upload_images/14465950-0925540140587b18.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-### 8.启动executor服务
+### 8.启动(关闭shutdown)executor服务
 
 ![TIM截图20181121102341.png](https://upload-images.jianshu.io/upload_images/14465950-0b4756e0745d7847.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -66,7 +72,7 @@
 
 ![TIM截图20181121102703.png](https://upload-images.jianshu.io/upload_images/14465950-b387f8e6b520dd93.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-### 9.启动web服务
+### 9.启动(关闭shutdown)web服务
 
 ![TIM截图20181121102818.png](https://upload-images.jianshu.io/upload_images/14465950-2ba059b80e970a6e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -153,4 +159,17 @@ ps 服务启动成功
 	
 ![TIM截图20181121145149.png](https://upload-images.jianshu.io/upload_images/14465950-b6cd04ee481579f1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)		
 		
+### 例子5(执行sql文件 同样一起压缩)
+
+	selects.sql
+	
+	use datatao;
+	select * from orders;
+	
+	hive-f.job
+	
+	type=command
+	command=hive -f 'selects.sql'
+	
+	
 		
