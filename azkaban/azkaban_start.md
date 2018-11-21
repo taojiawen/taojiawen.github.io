@@ -104,7 +104,7 @@ ps 服务启动成功
 
 ![TIM截图20181121112300.png](https://upload-images.jianshu.io/upload_images/14465950-04e85bc105f27c4b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-例子1(依赖)
+例子1(依赖 两个文件一起压缩)
 
 		start.job
 		
@@ -128,6 +128,13 @@ ps 服务启动成功
 	
 ![TIM截图20181121115051.png](https://upload-images.jianshu.io/upload_images/14465950-3c819c61c32f696a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 	
+例子3(使用jar包 和hadoop-mapreduce-examples-2.6.1.jar一起压缩)
+		
+		wc.job
+		
+		type=command
+		command=hadoop jar hadoop-mapreduce-examples-2.6.1.jar wordcount /acinput /acoutput
+		
 		
 		
 		
