@@ -13,7 +13,7 @@
 
 ### 3.mysql驱动包mysql-connector-java-5.1.34.jar放到lib目录下
 
-##Sqoop命令
+## Sqoop命令
 
 ![TIM截图20181121161256.png](https://upload-images.jianshu.io/upload_images/14465950-16bddaae59ccf434.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
